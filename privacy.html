@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeleprompterPro — Privacy Policy</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#5b5b5b; --bg:#fff; --accent:#2b6cb0; --line:#e6e6e6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e8; --muted:#a8a8a8; --bg:#141414; --accent:#7fb3e8; --line:#2c2c2c; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 16px 80px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:36px 0 10px; padding-top:18px; border-top:1px solid var(--line); }
+  h3 { font-size:17px; margin:24px 0 6px; }
+  .date { color:var(--muted); font-size:14px; margin-bottom:28px; }
+  ul { padding-left:22px; } li { margin:6px 0; }
+  a { color:var(--accent); }
+  .note { background:rgba(127,179,232,.12); border-left:3px solid var(--accent);
+          padding:12px 16px; border-radius:0 6px 6px 0; margin:18px 0; }
+  footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>TeleprompterPro — Privacy Policy</h1>
+<p class="date">Last updated: 27 October 2026</p>
+
+<p>TeleprompterPro is a teleprompter and video recording app for people who speak to a
+camera. This policy explains what the app does with your information.</p>
+
+<div class="note">
+<strong>Summary:</strong> TeleprompterPro collects no data from you. There is no account, no
+advertising and no analytics. Your videos, your scripts and all image processing stay on
+your device. The app does not connect to any server operated by us — we do not run one. The
+only time anything leaves your device is when you deliberately start a live broadcast to a
+server you yourself entered.
+</div>
+
+<h2>Data we collect</h2>
+<p>None. We do not collect, store, sell or share any personal data. The app contains no
+analytics, tracking, advertising or crash-reporting tools. The only third-party code in the
+app is an open-source streaming library (HaishinKit) used for the optional live broadcast
+feature described below; it sends nothing anywhere unless you start a broadcast yourself.
+Its licence is listed inside the app.</p>
+
+<h2>Data that stays on your device</h2>
+
+<h3>Camera and microphone</h3>
+<p>Camera frames are used to show the teleprompter preview and to record video. All image
+processing — eye-contact correction, skin smoothing, background replacement and every other
+filter — runs on your device's own processor. Video frames never leave your device, except
+while you are deliberately running a live broadcast (see below).</p>
+
+<h3>Your recordings</h3>
+<p>Video is recorded only when you ask for it and is saved to your own Photos library (or to
+your Movies folder on macOS). We have no access to your recordings and they are never
+uploaded anywhere.</p>
+
+<h3>Your scripts</h3>
+<p>Scripts you write or save are stored only on your device.</p>
+
+<h3>Background images you choose</h3>
+<p>If you choose one of your own photos as a virtual background, a copy is stored inside the
+app's own folder on your device. It never leaves the device, and it is deleted when you
+choose a different image.</p>
+
+<h2>Speech recognition</h2>
+<p>Speech recognition is used to advance the script at your speaking pace. By default this
+runs <strong>on your device only</strong>, and your audio never leaves it.</p>
+<p>Some languages have no on-device recognition model. In that case the feature simply stays
+off. You may turn on <em>Allow Cloud-Based Recognition</em> in Settings; only then is audio
+sent to Apple's speech recognition service for processing, and the app tells you on screen
+while this is active. That processing is governed by
+<a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. The audio never
+reaches us.</p>
+
+<h2>Live broadcasting (optional)</h2>
+<p>The app can stream your camera and microphone live to a streaming server — for example the
+RTMPS address and stream key your own streaming provider gives you. This feature is off until
+you open the broadcast screen, type in a server address and stream key, and tap the broadcast
+button.</p>
+<p>While a broadcast is running, your video and audio are sent directly from your device to
+<strong>the server you entered</strong>. We do not operate that server, we are not a party to
+the connection, and nothing is routed through us. What happens to your stream once it reaches
+that server is governed by the privacy policy of whoever runs it, not by this one. The
+teleprompter text and the on-screen controls are not part of the stream.</p>
+<p>The server address and stream key you type are held in memory for that session only. They
+are not saved to disk, not synced, and not sent anywhere except to the server you entered in
+order to connect to it. Stream keys are never written into error messages or logs.</p>
+
+<h2>Remote control and local network</h2>
+<p>A second device can be used as a remote control. This works peer-to-peer on your local
+network only: it uses no internet connection and passes through no server. The two devices
+pair with a six-digit code, each side proves to the other that it knows that code, and the
+connection is encrypted. The only information transmitted is play/pause, restart and scroll
+speed. Your scripts and your video are never transmitted. The name advertised on the network
+is a random per-session name, not your device's real name.</p>
+
+<h2>Permissions the app asks for</h2>
+<ul>
+  <li><strong>Camera</strong> — teleprompter preview and video recording.</li>
+  <li><strong>Microphone</strong> — audio for your recordings, and speech-paced scrolling.</li>
+  <li><strong>Speech recognition</strong> — advancing the script as you speak.</li>
+  <li><strong>Photos (add only)</strong> — saving your recording to your library. Permission
+      to read your existing photos is never requested.</li>
+  <li><strong>Local network</strong> — connecting a nearby device as a remote control.</li>
+  <li><strong>Internet access</strong> — used only while you are running a live broadcast to
+      a server you entered. The app makes no other network connections.</li>
+</ul>
+<p>You can withdraw any of these permissions at any time in your device settings. Declining a
+permission disables only the related feature; the rest of the app keeps working.</p>
+
+<h2>Children</h2>
+<p>Because the app collects no data from anyone, it collects no data from children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, this page is updated and the date above is revised.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:burhanettinuludag63@gmail.com">burhanettinuludag63@gmail.com</a></p>
+
+<footer>TeleprompterPro — UlgarTech · 2026</footer>
+</div>
+</body>
+</html>
